@@ -13,14 +13,14 @@
           </div>
 
           <div class='gap-2 m-0 p-0 m-0 ms-lg-5 text-center text-lg-end'>
-              <a class="btn-custom">disciplina</a>
-              <a class="btn-custom">Professor</a>
+              <a href="{{route('diciplinas')}}" class="btn-custom">disciplina</a>
+              <a href="{{route('professores')}}" class="btn-custom">Professor</a>
           </div>
       </div>
 
-      <div class="d-flex align-content-center justify-content-center">
+      <div class="overflow-hidden d-flex align-items-end vh-100">
          
-        <img src="imgs/svg/logo.svg" alt="" srcset="" class="overflow-hidden">
+        <img src="imgs/svg/logo.svg" alt="" srcset="" class="headline">
               
       </div>
 
