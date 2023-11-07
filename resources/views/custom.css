@@ -1,0 +1,31 @@
+.x {
+    border: 1px solid red;
+}
+
+.bg {
+    background-color: #49BBBD;
+}
+
+.logo {
+    font-family: 'popins', sans-serif;
+    font-style: bold;
+    font-size: x-large;
+}
+
+.btn-custom {
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    border: 1px solid transparent;
+    padding: 1rem;
+    border-radius: 15%;
+    transition: all 1s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold;
+}
+
+.btn-custom:hover {
+    background-color: #b8e8e9;
+    border: 1px solid rgb(38, 255, 9);
+    color: black;
+}
