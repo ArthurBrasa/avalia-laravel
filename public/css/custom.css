@@ -30,7 +30,7 @@
     color: black;
 }
 
-.img {
+.img-home {
     height: 100%;
     width: 100%;
 
@@ -40,3 +40,11 @@
 .bg-navbar {
     background-color: rgba(55, 255, 255, 0.9);
 }
+
+@media (max-width: 991px) { 
+    .img-home {
+        width: 80%;
+    }
+
+ }
+
