@@ -1,5 +1,5 @@
 @extends('default_components.main')
-
+@include('default_components.navbar')
 @section('content')
       
 
@@ -7,8 +7,8 @@
   <section class="row row-cols-1 row-cols-lg-2 d-flex p-0 m-0 flex-column-reverse flex-md-row">
       <div class="d-flex flex-column justify-content-center ">
           <div class="text-center text-xl-start">
-              <h1 class="fw-bold text-white text-center text-lg-end"><span id="element"></span></h1>
-              <p class="text-white text-center text-lg-end">Pesquise uma disciplina ou um professor </p>
+              <h1 class="fw-bold text-center text-lg-end"><span id="element" class="text-black"></span></h1>
+              <p class="text-black text-center text-lg-end">Pesquise uma disciplina ou um professor </p>
               
           </div>
 

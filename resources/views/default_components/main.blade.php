@@ -18,7 +18,7 @@
   <body class="bg">
 
     <!-- Navbar section -->
-    @include('default_components.navbar')
+    {{-- @include('default_components.navbar') --}}
 
     <div class="main-content">
         @yield('content')
