@@ -8,7 +8,7 @@
     {{-- <img src="https://66.media.tumblr.com/dddcf283cd2c8cbdb861a967bea6c4d8/tumblr_pwuoldlVGN1yqb8n1o1_500.gif" width="auto" height="auto" class="" alt=""> --}}
 </div>
 
-<div id="disqus_thread"></div>
+<div id="disqus_thread"  class="container"></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
