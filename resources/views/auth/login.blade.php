@@ -80,7 +80,7 @@
           </div>
           <div class="d-flex justify-content-between">
             <button type="submit" class="btn btn-outline-success rounded-5" style="width: 200px;">Login</button>
-            <button type="submit" class="btn btn-outline-success rounded-5" style="width: 200px;">Registrar</button>
+            <a type="submit" class="btn btn-outline-success rounded-5" style="width: 200px;" href="{{route('register')}}">Registrar</a>
           </div>
           {{-- @if (Route::has('password.request'))
                     <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('password.request') }}">

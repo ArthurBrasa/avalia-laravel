@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\DepartamentoController;
+
+use App\Http\Controllers\ProfessoresController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,10 +31,10 @@ Route::middleware([
     })->name('dashboard');
 });
 
-Route::get('/professores', function(){
-    return view('system.professores');
-})->name('professores');
+Route::get('/professores',  [ProfessoresController::class, 'index'] )->name('professores');
 
 Route::get('/diciplinas', function(){
     return view('system.diciplinas');
 })->name('diciplinas');
+
+Route::get('/departamento', [DepartamentoController::class, 'index'])->name('departamento');

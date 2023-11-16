@@ -21,7 +21,9 @@
     {{-- @include('default_components.navbar') --}}
 
     <div class="main-content">
-        @yield('content')
+
+      @yield('content')
+
     </div>
     
     @livewireScripts

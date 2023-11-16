@@ -15,7 +15,7 @@
                 <a class="nav-link" aria-current="page" href="#">Dashboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Departamento</a>
+                <a class="nav-link" href="{{route('departamento')}}">Departamento</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link "  href="#" aria-disabled="true">Avaliações</a>
