@@ -7,6 +7,7 @@ use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\ProfessoresController;
 use App\Http\Controllers\DiciplinasController;
 use App\Http\Controllers\InfosController;
+use App\Http\Controllers\InfoMateriasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,10 +34,15 @@ Route::middleware([
     })->name('dashboard');
 });
 
+# Professores
 Route::get('/professores',  [ProfessoresController::class, 'index'] )->name('professores');
+Route::get('/professores/{nome}', [InfosController::class, 'index'])->name('infoProfessores');
 
+# Matérias
 Route::get('/diciplinas',[DiciplinasController::class, 'index'])->name('diciplinas');
+Route::get('/diciplinas/{nome}', [InfoMateriasController::class, 'index'])->name('infoMaterias');
+
+
 
 Route::get('/departamento', [DepartamentoController::class, 'index'])->name('departamento');
 
-Route::get('/professores/{nome}', [InfosController::class, 'index'])->name('infoProfessores');

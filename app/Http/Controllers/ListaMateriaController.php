@@ -5,10 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DiciplinasController extends Controller
+class ListaMateriaController extends Controller
 {
     //
-
     public function index(){
         return view('system.listaMaterias');
     }

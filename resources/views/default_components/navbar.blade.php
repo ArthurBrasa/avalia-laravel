@@ -12,7 +12,7 @@
                 <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+                <a class="nav-link" aria-current="page" href="#">Matérias</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="{{route('departamento')}}">Departamento</a>
