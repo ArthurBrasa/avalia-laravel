@@ -5,11 +5,11 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class DepartamentoController extends Controller
+class DiciplinasController extends Controller
 {
     //
 
     public function index(){
-        return view('system.listaProfessores');
+        return view('system.diciplinas');
     }
 }

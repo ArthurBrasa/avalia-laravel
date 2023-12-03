@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DepartamentoController;
 
 use App\Http\Controllers\ProfessoresController;
+use App\Http\Controllers\DiciplinasController;
+use App\Http\Controllers\InfosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,8 +35,8 @@ Route::middleware([
 
 Route::get('/professores',  [ProfessoresController::class, 'index'] )->name('professores');
 
-Route::get('/diciplinas', function(){
-    return view('system.diciplinas');
-})->name('diciplinas');
+Route::get('/diciplinas',[DiciplinasController::class, 'index'])->name('diciplinas');
 
 Route::get('/departamento', [DepartamentoController::class, 'index'])->name('departamento');
+
+Route::get('/professores/{nome}', [InfosController::class, 'index'])->name('infoProfessores');
