@@ -53,9 +53,9 @@
   
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-          <x-professor-card :nome="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
-          <x-professor-card :nome="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
-          <x-professor-card :nome="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
+          <x-card-materia :materia="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
+          <x-card-materia :materia="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
+          <x-card-materia :materia="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
 
         </div>
       </div>
