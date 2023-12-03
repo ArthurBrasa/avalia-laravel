@@ -12,10 +12,10 @@
                 <a class="nav-link" aria-current="page" href="{{route('home')}}">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Matérias</a>
+                <a class="nav-link" aria-current="page" href="{{route('diciplinas')}}">Matérias</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{{route('departamento')}}">Departamento</a>
+                <a class="nav-link" href="{{route('professores')}}">Professores</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link "  href="#" aria-disabled="true">Avaliações</a>

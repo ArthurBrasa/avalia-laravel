@@ -44,5 +44,5 @@ Route::get('/diciplinas/{nome}', [InfoMateriasController::class, 'index'])->name
 
 
 
-Route::get('/departamento', [DepartamentoController::class, 'index'])->name('departamento');
+// Route::get('/departamento', [DepartamentoController::class, 'index'])->name('departamento');
 
