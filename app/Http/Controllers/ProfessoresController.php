@@ -12,7 +12,7 @@ class ProfessoresController extends Controller
      */
     public function index()
     {
-        return view('system.professores');
+        return view('system.listaProfessores');
     }
 
    
