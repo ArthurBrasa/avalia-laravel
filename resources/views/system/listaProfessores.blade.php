@@ -52,101 +52,12 @@
   
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="p-3" src="imgs/svg/Proffs/all-might.svg" alt="">
-              <div class="card-body">
-                <p class="card-text">All Might</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="{{ route('infoProfessores', ['nome' => 'all-might']) }}">Infos</a></button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button>
-                  </div>
-                  <small class="text-body-secondary"><img src="Icons/nota.svg" alt=""></small>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="p-3" src="imgs/svg/Proffs/eraser.svg" alt="">
-              <div class="card-body">
-                <p class="card-text">Eraser Head</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Infos</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button>
-                  </div>
-                  <small class="text-body-secondary"><img src="Icons/nota.svg" alt=""></small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="p-3" src="imgs/svg/Proffs/midnight.svg" alt="">
-              <div class="card-body">
-                <p class="card-text">Midnight</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="{{route('infoProfessores', ['nome' => 'midnight'])}}">Infos</a></button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button>
-                  </div>
-                  <small class="text-body-secondary"><img src="Icons/nota.svg" alt=""></small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="p-3" src="imgs/svg/Proffs/nezu.svg" alt="">
-              <div class="card-body">
-                <p class="card-text">Nezu</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Infos</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button>
-                  </div>
-                  <small class="text-body-secondary"><img src="Icons/nota.svg" alt=""></small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="p-3" src="imgs/svg/Proffs/all-might.svg" alt="">
-              <div class="card-body">
-                <p class="card-text">All Might</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Infos</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button>
-                  </div>
-                  <small class="text-body-secondary"><img src="Icons/nota.svg" alt=""></small>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card shadow-sm">
-              <img class="p-3" src="imgs/svg/Proffs/all-might.svg" alt="">
-              <div class="card-body">
-                <p class="card-text">All Might</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Infos</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button>
-                  </div>
-                  <small class="text-body-secondary"><img src="Icons/nota.svg" alt=""></small>
-                </div>
-              </div>
-            </div>
-          </div>
+            <x-professor-card :nome="'Eraser Head'" :link="'eraser-head'" :img="'imgs/svg/Proffs/eraser.svg'"  />
+            <x-professor-card :nome="'All Might'" :link="'all-might'" :img="'imgs/svg/Proffs/all-might.svg'"  />
+            <x-professor-card :nome="'Midnight'" :link="'midnight'" :img="'imgs/svg/Proffs/midnight.svg'"  />
+            <x-professor-card :nome="'Nezu'" :link="'nezu'" :img="'imgs/svg/Proffs/nezu.svg'"  />
+            <x-professor-card :nome="'All Might'" :link="'all-might'" :img="'imgs/svg/Proffs/all-might.svg'"  />
+            <x-professor-card :nome="'Eraser Head'" :link="'eraser-head'" :img="'imgs/svg/Proffs/eraser.svg'"  />
          
 
         </div>
