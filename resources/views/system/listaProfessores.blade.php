@@ -52,8 +52,7 @@
       <div>
   
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          
-            <x-professor-card :nome="'Eraser Head'" :link="'eraser-head'" :img="'imgs/svg/Proffs/eraser.svg'"  />
+        
             <x-professor-card :nome="'All Might'" :link="'all-might'" :img="'imgs/svg/Proffs/all-might.svg'"  />
             <x-professor-card :nome="'Midnight'" :link="'midnight'" :img="'imgs/svg/Proffs/midnight.svg'"  />
             <x-professor-card :nome="'Nezu'" :link="'nezu'" :img="'imgs/svg/Proffs/nezu.svg'"  />
