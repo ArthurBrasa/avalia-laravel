@@ -1,11 +1,10 @@
 @extends('default_components.main')
 
-@extends("default_components.navbar")
-
-@php
-    
-@endphp
+@section('navbar')
+    @include('default_components.navbar')
+@endsection
 @section('content')
+      
     <div class="container">
         <h1>{{$nome}}</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto perferendis necessitatibus asperiores consequuntur repudiandae similique ullam ut accusantium? Iusto minus maxime placeat doloremque, magnam quidem animi qui repudiandae quod voluptates!</p>

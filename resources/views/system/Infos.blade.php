@@ -1,6 +1,8 @@
 @extends('default_components.main')
 
-@extends("default_components.navbar")
+@section('navbar')
+    @include('default_components.navbar')
+@endsection
 
 @php
     

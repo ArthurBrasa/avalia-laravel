@@ -1,7 +1,8 @@
 @extends('default_components.main')
 
-@include('default_components.navbar')s
-
+@section('navbar')
+    @include('default_components.navbar')
+@endsection
 @section('content')
 
 <div class="container">

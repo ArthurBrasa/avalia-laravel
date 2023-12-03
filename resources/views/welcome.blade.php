@@ -35,7 +35,7 @@
   <!-- Setup and start animation! -->
   <script>
     // inverter a ordem das frases
-    var strings = ['Compartilhe sua experiência com outros alunos! ', 'Veja avaliações de Matérias e Professores!', 'Avalie suas Matérias e Professores ^ ^'];
+    var strings = ['Compartilhe sua experiência com outros alunos!', 'Veja avaliações de Matérias e Professores!', 'Avalie suas Matérias e Professores ^ ^'];
     var typed = new Typed('#element', {
       strings: ['Compartilhe sua experiência com outros alunos! ', 'Veja avaliações de Matérias e Professores!', 'Avalie suas Matérias e Professores ^ ^'],
       typeSpeed: 50,

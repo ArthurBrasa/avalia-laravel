@@ -1,6 +1,8 @@
 @extends('default_components.main')
 
-@include('default_components.navbar')s
+@section('navbar')
+    @include('default_components.navbar')
+@endsection
 
 @section('content')
 
@@ -50,39 +52,7 @@
       <div>
   
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-          
-          {{-- <div class="col">
-            <div class="card shadow-sm">
-              <img class="p-3" src="https://cdn.oneesports.gg/cdn-data/2022/09/Anime_CutestGirlsof2022_Kaguya_Rem_Sakura-1024x576.jpg" alt="">
-              <div class="card-body">
-                <p class="card-text">SI</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary"><a href="{{ route('infoMaterias', ['nome' => 'si']) }}">Infos</a></button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button>
-                  </div>
-                  <small class="text-body-secondary"><img src="Icons/nota.svg" alt=""></small>
-                </div>
-              </div>
-            </div>
-          </div> --}}
-          
-          {{-- <div class="col">
-            <div class="card shadow-sm">
-              <img class="p-3" src="imgs/svg/Proffs/eraser.svg" alt="">
-              <div class="card-body">
-                <p class="card-text">Eraser Head</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Infos</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button>
-                  </div>
-                  <small class="text-body-secondary"><img src="Icons/nota.svg" alt=""></small>
-                </div>
-              </div>
-            </div>
-          </div> --}}
-          
+
           <x-professor-card :nome="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
           <x-professor-card :nome="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
           <x-professor-card :nome="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
