@@ -11,6 +11,19 @@ services:
       - laravel-net
     ports:
       - "1080:8000"
+  
+  db:
+    image: bitnami/mysql:latest
+    container_name: mysql-db
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: avalia
+      MYSQL_USER: avalia_user
+      MYSQL_PASSWORD: 1234
+    volumes:
+      - ./mysql/data:/bitnami/mysql/data
+    networks:
+      - laravel-net
 
 networks:
   laravel-net:
