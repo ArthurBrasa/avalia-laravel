@@ -24,6 +24,8 @@ services:
       - /mysql/data:/var/lib/mysql
     networks:
       - laravel-net
+    ports:
+      -5506:3306
 
 networks:
   laravel-net:
