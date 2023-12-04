@@ -5,6 +5,7 @@ services:
   app:
     image: bitnami/laravel:latest
     container_name: avalia
+    volume:
       - .:/app
     networks:
       - laravel-net
