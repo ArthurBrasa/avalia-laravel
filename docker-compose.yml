@@ -9,8 +9,9 @@ services:
       - .:/app
     networks:
       - laravel-net
+    ports:
+      - "1080:80"
 
 networks:
   laravel-net:
     driver: bridge
-
