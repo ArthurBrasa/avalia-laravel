@@ -79,14 +79,10 @@
   
   
       <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-around">
-        <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 250px;">
-          <img class="card-img-top p-2" src="{{asset('imgs/svg/img-materia.svg')}}" alt="">
-          <p class="card-body">BNHA001 - Prática de Defesa</p>
-        </div> 
-        <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 250px;">
-          <img class="card-img-top p-2" src="{{asset('imgs/svg/materia-2.svg')}}" alt="">
-          <p class="card-body">BNHA002 - Educação Fisíca</p>
-        </div>
+
+        <x-mini-card :materia="'BNHA001 - Prática de Defesa'" :img="'auto-defesa'" />
+        <x-mini-card :materia="'BNHA001 - Prática de Defesa'" :img="'materia-2'" />
+        
       </div>
   
     </div>

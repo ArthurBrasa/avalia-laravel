@@ -52,13 +52,19 @@
       <div>
   
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+          @foreach ($professores as $prof)
+              {{-- <p>{{$prof->nome}}</p> --}}
+              <x-professor-card :nome="$prof->nome" :link="$prof->link" :img="$prof->link"/>
+          @endforeach
+
         
-            <x-professor-card :nome="'All Might'" :link="'all-might'" :img="'all-might'"  />
+            {{-- <x-professor-card :nome="'All Might'" :link="'all-might'" :img="'all-might'"  />
             <x-professor-card :nome="'Midnight'" :link="'midnight'" :img="'midnight'"  />
             <x-professor-card :nome="'Nezu'" :link="'nezu'" :img="'nezu'"  />
             <x-professor-card :nome="'All Might'" :link="'all-might'" :img="'all-might'"  />
             <x-professor-card :nome="'Eraser Head'" :link="'eraser-head'" :img="'eraser-head'"  />
-         
+          --}}
 
         </div>
       </div>
