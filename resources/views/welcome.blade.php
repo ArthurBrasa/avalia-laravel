@@ -21,7 +21,7 @@
       </div>
 
       <div class="overflow-hidden d-flex align-items-start">
-         <div class="">
+         <div class="mx-auto text-center">
            <img src="imgs/svg/logo.svg" alt="" srcset="" class="headline img-home">
          </div>
               
