@@ -14,7 +14,7 @@
     </div>
 
     <!-- Filtros -->
-    <div class="py-5">
+    {{-- <div class="py-5">
       <ul class="list-group d-flex flex-row justify-content-center">
         <li class="list-group-item"><a href="#" class="text-decoration-none">Acessibilidade</a></li>
         <li class="list-group-item"><a href="#" class="text-decoration-none">Dificuldades</a></li>
@@ -23,7 +23,7 @@
         <li class="list-group-item"><a href="#" class="text-decoration-none">Ambiente</a></li>
         <li class="list-group-item"><a href="#" class="text-decoration-none">Departamento</a></li>
       </ul>
-    </div>
+    </div> --}}
     
   </div>
 
