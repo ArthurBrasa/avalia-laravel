@@ -4,7 +4,7 @@ services:
   # Serviço do aplicativo Laravel
   app:
     image: bitnami/laravel:latest
-    container_name: laravel-app
+    container_name: avalia
       - .:/app
     networks:
       - laravel-net
