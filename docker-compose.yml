@@ -25,7 +25,7 @@ services:
     networks:
       - laravel-net
     ports:
-      -"5506:3306"
+      - "5506:3306"
 
 networks:
   laravel-net:
