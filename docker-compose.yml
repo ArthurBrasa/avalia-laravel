@@ -5,25 +5,12 @@ services:
   app:
     image: bitnami/laravel:latest
     container_name: avalia
-    volume:
+    volumes:
       - .:/app
     networks:
       - laravel-net
 
-  # # Serviço do banco de dados (MySQL)
-  # db:
-  #   image: bitnami/mysql:latest
-  #   container_name: laravel-db
-  #   environment:
-  #     - MYSQL_ROOT_PASSWORD=your_root_password
-  #     - MYSQL_DATABASE=laravel_db
-  #     - MYSQL_USER=your_db_user
-  #     - MYSQL_PASSWORD=your_db_password
-  #   volumes:
-  #     - ./mysql/data:/bitnami/mysql/data
-  #   networks:
-  #     - laravel-net
-
 networks:
   laravel-net:
     driver: bridge
+
