@@ -10,7 +10,7 @@ services:
     networks:
       - laravel-net
     ports:
-      - "1080:80"
+      - "1080:8000"
 
 networks:
   laravel-net:
