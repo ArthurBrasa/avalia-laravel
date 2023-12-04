@@ -15,7 +15,8 @@
         <!--  -->
         <div class="d-flex flex-column flex-md-row gap-5">
           <div class="card shadow-sm p-3 mb-5 bg-body rounded">
-            <img class="card-img p-3" width="300px" src='{{asset("imgs/svg/Proffs/$img.svg", true)}}' alt="">
+            <img class="card-img p-3" width="300px" src='{{ asset("imgs/svg/Proffs/$img.svg", true)}}' alt="">
+            <img class="card-img p-3" width="300px" src='{{ asset("imgs/svg/Proffs/$img.svg")}}' alt="">
             <p class="card-body">{{$nome}}</p>
           </div>
   
