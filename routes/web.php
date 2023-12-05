@@ -36,6 +36,7 @@ Route::middleware([
 
 # Professores
 Route::get('/professores',  [ProfessoresController::class, 'index'] )->name('professores');
+Route::post('/professores',  [ProfessoresController::class, 'search'] )->name('searchProfessor');
 Route::get('/professores/{id}', [InfosController::class, 'index'])->name('infoProfessores');
 
 # Matérias

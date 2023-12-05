@@ -8,9 +8,16 @@
 <div class="container">
 
     {{-- Pesquisa --}}
-    <div id="search" class="text-center position-relative my-4">
-      <input type="text" class="form-control" placeholder="Digite uma matéria que deseja pesquisar sobre...">
-      <!-- <i class="bi bi-search position-relatives"></i> -->
+    <div class="d-flex justify-content-center my-5">
+
+      <form method="POST" action="{{route('searchProfessor')}}" class="row">
+        @csrf
+        <div class="col-8">
+          <input class=" form-control" name="pesquisa" type="search" placeholder="Nome do Professor"
+            aria-label="Search" style=" outline: none;">
+        </div>
+        <button class="col-3 btn btn-primary" type="submit">Search </button>
+      </form>
     </div>
 
     <!-- Filtros -->

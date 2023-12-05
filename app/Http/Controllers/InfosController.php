@@ -17,4 +17,5 @@ class InfosController extends Controller
         $professor->img = strtolower(str_replace(' ', '-', $professor->nome));
         return view('system.Infos', ['professor' => $professor]);
     }
+
 }

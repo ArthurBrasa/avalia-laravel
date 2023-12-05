@@ -46,6 +46,18 @@ class ProfessoresController extends Controller
         return view('system.listaProfessores', ['professores' => $professores]);
     }
 
+    public function search(Request $request) {
+        $pesquisa = $request->pesquisa;
+        // dd($pesquisa);
+        // Use o operador LIKE para pesquisar pelo nome do professor
+        $professores = Professor::where('nome', 'LIKE', "%$pesquisa%")->get();
+        foreach($professores as $prof) {
+            $prof->link = strtolower(str_replace('.', '.', str_replace(' ', '-', $prof->nome)));
+        }
+
+        return view('system.listaProfessores', ['professores' => $professores]);
+    }
+
 
 
    

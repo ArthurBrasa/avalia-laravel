@@ -11,4 +11,6 @@ class ListaMateriaController extends Controller
     public function index(){
         return view('system.listaMaterias');
     }
+
+    
 }
