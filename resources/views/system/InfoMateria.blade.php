@@ -15,7 +15,7 @@
             <p class="card-body">{{$nome}}</p>
           </div> --}}
 
-          <x-card-materia-info :name="$materia->name" :img="$materia->id" />
+          <x-card-materia-info :name="$materia->name" :img="$materia->img_link" />
   
           <div class="card p-5 shadow-sm p-3 mb-5 bg-body rounded">
             <div class="row row-cols-3 mb-5">
