@@ -14,7 +14,7 @@ class Materia extends Model
         'sigla',
         'universidade_id',
         'descricao',
-        'departamento',
-        'duracao'
+        'duracao',
+        'img_link',
     ];
 }

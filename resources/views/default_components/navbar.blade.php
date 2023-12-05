@@ -17,18 +17,27 @@
               <li class="nav-item">
                 <a class="nav-link" href="{{route('professores')}}">Professores</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link "  href="#" aria-disabled="true">Avaliações</a>
-              </li>
+              @auth
+                <li class="nav-item">
+                  <a class="nav-link "  href="#" aria-disabled="true">Avaliações</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " aria-disabled="true" href="{{route('dashboard')}}">Dashboard</a>
+                </li>
+              @endauth
               <li class="nav-item">
                 <a class="nav-link "  href="#" aria-disabled="true">Sobre Nós</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link btn bg-success"  href="{{ route('login') }}" aria-disabled="true">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link btn bg-success "  href="{{ route('register') }}" aria-disabled="true">Registrar</a>
-              </li>
+              
+              @guest
+                <li class="nav-item">
+                  <a class="nav-link btn bg-success"  href="{{ route('login') }}" aria-disabled="true">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn bg-success "  href="{{ route('register') }}" aria-disabled="true">Registrar</a>
+                </li>
+              @endguest
+             
             </ul>
           </div >
 

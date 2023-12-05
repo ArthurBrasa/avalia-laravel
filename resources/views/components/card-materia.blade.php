@@ -1,6 +1,6 @@
 <div class="col">
     <div class="card shadow-sm">
-      <img class="p-3" src='{{asset("imgs/svg/materia/$img.svg")}}' alt="">
+      <img class="p-3" src='{{asset($img)}}' alt="">
       <div class="card-body">
         <p class="card-text">{{$materia}}</p>
         <div class="d-flex justify-content-between align-items-center">

@@ -60,7 +60,7 @@
   
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
           @foreach ($materias as $materia)
-            <x-card-materia :materia="$materia->name" :link="$materia->link" :id="$materia->id" :img="$materia->id" />
+            <x-card-materia :materia="$materia->name" :link="$materia->link" :id="$materia->id" :img="$materia->img_link" />
 
           @endforeach
 

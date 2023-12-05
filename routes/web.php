@@ -6,6 +6,7 @@ use App\Http\Controllers\DepartamentoController;
 
 use App\Http\Controllers\ProfessoresController;
 use App\Http\Controllers\ListaMateriaController;
+use App\Http\Controllers\MateriaController;
 use App\Http\Controllers\InfosController;
 use App\Http\Controllers\InfoMateriasController;
 
@@ -36,12 +37,18 @@ Route::middleware([
 
 # Professores
 Route::get('/professores',  [ProfessoresController::class, 'index'] )->name('professores');
-Route::post('/professores',  [ProfessoresController::class, 'search'] )->name('searchProfessor');
+Route::post('/professores',  [ProfessoresController::class, 'search'] )->name('searchProfessor')->middleware('auth');
 Route::get('/professores/{id}', [InfosController::class, 'index'])->name('infoProfessores');
 
 # Matérias
 Route::get('/diciplinas',[ListaMateriaController::class, 'index'])->name('diciplinas');
 Route::post('/diciplinas',[ListaMateriaController::class, 'search'])->name('searchDiciplinas');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/diciplinas/new',[MateriaController::class, 'index'])->name('formDiciplinas');
+    Route::post('/diciplinas/new',[MateriaController::class, 'store'])->name('storeDiciplinas');
+});
+
 Route::get('/diciplinas/{nome}', [InfoMateriasController::class, 'index'])->name('infoMaterias');
 
 

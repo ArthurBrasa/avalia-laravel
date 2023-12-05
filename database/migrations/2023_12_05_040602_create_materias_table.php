@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('duracao');
             $table->string('sigla');
             $table->text('descricao');
+            $table->text('img_link');
             $table->timestamps();
         });
     }
