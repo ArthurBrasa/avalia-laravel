@@ -41,6 +41,7 @@ Route::get('/professores/{id}', [InfosController::class, 'index'])->name('infoPr
 
 # Matérias
 Route::get('/diciplinas',[ListaMateriaController::class, 'index'])->name('diciplinas');
+Route::post('/diciplinas',[ListaMateriaController::class, 'search'])->name('searchDiciplinas');
 Route::get('/diciplinas/{nome}', [InfoMateriasController::class, 'index'])->name('infoMaterias');
 
 
