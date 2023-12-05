@@ -45,6 +45,23 @@
     </div>
   </div>
 
+  <div class="container  justify-content-center d-flex">
+    <div class="card mb-3" style="max-width: 740px;">
+      <div class="row g-0">
+        <div class="col-md-4 p-4">
+          <img src="imgs/svg/img-principal.svg" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">Prática de Defesa 2</h5>
+            <p class="card-text">Explore uma prática de defesa extraordinária ministrada por um instrutor renomado. Prepare-se para aprimorar suas habilidades de combate e resgate, enquanto desenvolve seu próprio espírito heróico. Uma oportunidade única de se tornar o herói que o mundo precisa.</p>
+            <p class="card-text"><small class="text-muted">Pré-requisitos: <span>Sem pré-requisitos</span></small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!--  -->
   <div class="container-md">
     <div class="album py-5 bg-body-tertiary">
@@ -54,8 +71,10 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
           <x-card-materia :materia="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
-          <x-card-materia :materia="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
-          <x-card-materia :materia="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
+          <x-card-materia :materia="'Judô'" :link="'judo'" :img="'https://img.freepik.com/vetores-premium/criancas-de-desenhos-animados-bonitos-fazendo-alguns-movimentos-basicos-de-artes-marciais-de-karate-e-vestindo-quimono-na-ilustracao_2175-4068.jpg?w=996'" />
+          <x-card-materia :materia="'Computação'" :link="'computacao'" :img="'https://cdn.2rscms.com.br/imgcache/2008/1536x/uploads/2008/2020_jessica/capa-ciencia-da-computacao.jpg.webp'" />
+          <x-card-materia :materia="'Mapografia'" :link="'mapografia'" :img="'http://2.bp.blogspot.com/-HIRdGNOvlQw/TZCvBGsnQRI/AAAAAAAABJY/PO8VfVHHbEU/s320/full0018.jpg'" />
+          <x-card-materia :materia="'Literatura'" :link="'literatura'" :img="'https://www.bienaldolivrojf.com.br/wp-content/uploads/2023/06/Fotos-livros-brasileiros-diversidade-historia.webp'" />
 
         </div>
       </div>

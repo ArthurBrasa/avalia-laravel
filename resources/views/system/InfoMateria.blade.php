@@ -23,25 +23,12 @@
                 <span class="d-block">lorem</span>
               </div>
               <div class="col p-2">
-                <span class="bg-black bg-opacity-25 py-1 px-2">Idade:</span>
+                <span class="bg-black bg-opacity-25 py-1 px-2">Ementa:</span>
                 <span class="d-block">lorem</span>
               </div>
-              <div class="col p-2">
-                <span class="bg-black bg-opacity-25 py-1 px-2">Matéria:</span>
-                <span class="d-block">lorem</span>
-              </div>
-              <div class="col p-2">
-                <span class="bg-black bg-opacity-25 py-1 px-2">Universidade:</span>
-                <span class="d-block">lorem</span>
-              </div>
-              <div class="col p-2">
-                <span class="bg-black bg-opacity-25 py-1 px-2">Departamento:</span>
-                <span class="d-block">lorem</span>
-              </div>
-            </div>
-            
+              <div class="col p-2">            
             <div>
-              <span class="bg-black bg-opacity-25">Observações:</span>
+              <span class="bg-black bg-opacity-25">Pré-requisito:</span>
               <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis atque nam beatae quos hic ut rerum, eum incidunt esse quia dignissimos mollitia temporibus est ex, enim neque perspiciatis commodi. Nostrum!</p>
             </div>
          
@@ -77,12 +64,12 @@
   
       <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-around">
         <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 250px;">
-          <img class="card-img-top p-2" src="{{asset('imgs/svg/img-materia.svg')}}" alt="">
-          <p class="card-body">BNHA001 - Prática de Defesa</p>
+          <img class="card-img-top p-2" src="{{asset('imgs/svg/Proffs/all-might.svg')}}" alt="">
+          <p class="card-body">All might</p>
         </div> 
         <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 250px;">
-          <img class="card-img-top p-2" src="{{asset('imgs/svg/materia-2.svg')}}" alt="">
-          <p class="card-body">BNHA002 - Educação Fisíca</p>
+          <img class="card-img-top p-2" src="{{asset('imgs/svg/Proffs/sasuke-uchiha.svg')}}" alt="">
+          <p class="card-body">Sasuke Uchiha</p>
         </div>
       </div>
   
