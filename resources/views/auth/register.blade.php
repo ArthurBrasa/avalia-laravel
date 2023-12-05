@@ -99,7 +99,7 @@
             </div>
             <div class="d-flex justify-content-between">
                 <button type="submit" class="btn btn-outline-success rounded-5" style="width: 200px;">Registrar</button>
-                <a type="submit" class="btn btn-outline-success rounded-5" style="width: 200px;" href="{{route('register')}}">Login</a>
+                <a type="submit" class="btn btn-outline-success rounded-5" style="width: 200px;" href="{{route('login')}}">Login</a>
               </div>
 
 
