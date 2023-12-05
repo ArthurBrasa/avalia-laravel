@@ -11,11 +11,7 @@ class ListaMateriaController extends Controller
     //
     public function index(){
 
-        $materias = Materia::all();
-        
-        foreach($materias as $materia) {
-            $materia->link = strtolower(str_replace('.', '.', str_replace(' ', '-', $materia->name)));
-        }
+        $materias = Materia::all(); 
 
         return view('system.listaMaterias', ['materias' => $materias]);
     }
@@ -25,7 +21,7 @@ class ListaMateriaController extends Controller
         // dd($pesquisa);
         // Use o operador LIKE para pesquisar pelo nome do professor
         $materias = Materia::where('name', 'LIKE', "%$pesquisa%")->get();
-
+        // dd($materias);
         return view('system.listaMaterias', ['materias' => $materias]);
     }
 
