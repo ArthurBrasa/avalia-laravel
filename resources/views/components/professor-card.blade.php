@@ -7,7 +7,7 @@
           <div class="d-flex justify-content-between align-items-center">
               <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">
-                      <a href="{{ route('infoProfessores', ['nome' => $link]) }}">infos</a>
+                    <a href="{{ route('infoProfessores', ['id' => $id]) }}">infos</a>
                   </button>
                   <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button>
               </div>

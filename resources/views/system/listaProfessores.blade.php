@@ -55,16 +55,30 @@
 
           @foreach ($professores as $prof)
               {{-- <p>{{$prof->nome}}</p> --}}
-              <x-professor-card :nome="$prof->nome" :link="$prof->link" :img="$prof->link"/>
-          @endforeach
+              <x-professor-card :nome="$prof->nome" :link="$prof->link" :img="$prof->link" :id="$prof->id"/>
 
-        
-            {{-- <x-professor-card :nome="'All Might'" :link="'all-might'" :img="'all-might'"  />
-            <x-professor-card :nome="'Midnight'" :link="'midnight'" :img="'midnight'"  />
-            <x-professor-card :nome="'Nezu'" :link="'nezu'" :img="'nezu'"  />
-            <x-professor-card :nome="'All Might'" :link="'all-might'" :img="'all-might'"  />
-            <x-professor-card :nome="'Eraser Head'" :link="'eraser-head'" :img="'eraser-head'"  />
-          --}}
+                {{-- <div class="col">
+                  <div class="card shadow-sm">
+                      <img class="p-3" src="imgs/svg/Proffs/{{$prof->link}}.svg" alt="">
+                      <div class="card-body">
+                          <p class="card-text">{{ $prof->nome }}</p>
+                          <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                  <button type="button" class="btn btn-sm btn-outline-secondary">
+                                      <a href="{{ route('infoProfessores', ['nome' => $prof->link]) }}">infos</a>
+                                  </button>
+                                  <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button>
+                              </div>
+                              <small class="text-body-secondary">
+                                  <img width="50px" src="imgs/svg/Icons/nota.svg" alt="">
+                              </small>
+                          </div>
+                      </div>
+                  </div>
+                </div> --}}
+                
+                
+          @endforeach
 
         </div>
       </div>

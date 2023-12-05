@@ -19,4 +19,11 @@ class Professor extends Model
         'universidade',
         'observacoes',
     ];
+
+    public static function getProfessorByName($nome)
+    {
+        // Usando o método where para encontrar um professor com base no nome
+        // O método first() retorna apenas o primeiro resultado encontrado
+        return self::where('nome', $nome)->first();
+    }
 }

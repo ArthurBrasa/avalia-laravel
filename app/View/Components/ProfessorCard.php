@@ -14,7 +14,8 @@ class ProfessorCard extends Component
     public function __construct(
         public string $nome,
         public string $link,
-        public string $img
+        public string $img,
+        public string $id
         ){}
 
     /**

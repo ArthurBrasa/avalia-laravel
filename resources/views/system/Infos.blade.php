@@ -9,44 +9,40 @@
 @endphp
 @section('content')
     <div class="container">
-        <h1>{{$nome}}</h1>
+        <h1>{{$professor->nome}}</h1>
         
     <div>
         <!--  -->
         <div class="d-flex flex-column flex-md-row gap-5">
           <div class="card shadow-sm p-3 mb-5 bg-body rounded">
-            <img class="card-img p-3" width="300px" src='{{ asset("imgs/svg/Proffs/$img.svg", true)}}' alt="">
-            {{-- <img class="card-img p-3" width="300px" src='{{ asset("imgs/svg/Proffs/$img.svg")}}' alt=""> --}}
-            <p class="card-body">{{$nome}}</p>
+            <img class="card-img p-3" width="300px" src='{{ asset("imgs/svg/Proffs/$professor->img.svg", true)}}' alt="">
+            <img class="card-img p-3" width="300px" src='{{ asset("imgs/svg/Proffs/$professor->img.svg")}}' alt="">
+            <p class="card-body">{{$professor->nome}}</p>
           </div>
   
           <div class="card p-5 shadow-sm p-3 mb-5 bg-body rounded">
             <div class="row row-cols-3 mb-5">
-              <div class="col p-2">
+              <div class="col p-2 w-auto">
                 <span class="bg-black bg-opacity-25 py-1 px-2">Departamento:</span>
-                <span class="d-block">lorem</span>
+                <span class="d-block">{{$professor->departamento}}</span>
               </div>
-              <div class="col p-2">
+              <div class="col p-2 w-auto">
                 <span class="bg-black bg-opacity-25 py-1 px-2">Idade:</span>
-                <span class="d-block">lorem</span>
+                <span class="d-block">{{$professor->idade}}</span>
               </div>
-              <div class="col p-2">
+              <div class="col p-2 w-auto">
                 <span class="bg-black bg-opacity-25 py-1 px-2">Matéria:</span>
-                <span class="d-block">lorem</span>
+                <span class="d-block">{{$professor->materia}}</span>
               </div>
-              <div class="col p-2">
+              <div class="col p-2 w-auto">
                 <span class="bg-black bg-opacity-25 py-1 px-2">Universidade:</span>
-                <span class="d-block">lorem</span>
-              </div>
-              <div class="col p-2">
-                <span class="bg-black bg-opacity-25 py-1 px-2">Departamento:</span>
-                <span class="d-block">lorem</span>
+                <span class="d-block">{{$professor->universidade}}</span>
               </div>
             </div>
             
-            <div>
-              <span class="bg-black bg-opacity-25">Observações:</span>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis atque nam beatae quos hic ut rerum, eum incidunt esse quia dignissimos mollitia temporibus est ex, enim neque perspiciatis commodi. Nostrum!</p>
+            <div class="w-auto">
+              <span class="bg-black bg-opacity-25 ">Observações:</span>
+              <p>{{$professor->observacoes}}</p>
             </div>
          
           </div>

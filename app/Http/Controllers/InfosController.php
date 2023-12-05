@@ -4,17 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Professor;
 
 class InfosController extends Controller
 {
     //
  
 
-    public function index(Request $request, $nome) {
-        
-        $img = $nome;
-        $nome = ucwords(str_replace('-', ' ', $nome));
-
-        return view('system.Infos', ['nome' => $nome, 'img' => $img]);
+    public function index(Request $request, $id) {
+        // $prof = Professor::getProfessorByName($nome);
+        $professor = Professor::findOrFail($id);
+        $professor->img = strtolower(str_replace(' ', '-', $professor->nome));
+        return view('system.Infos', ['professor' => $professor]);
     }
 }
