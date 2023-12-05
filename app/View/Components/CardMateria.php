@@ -14,7 +14,8 @@ class CardMateria extends Component
     public function __construct(
         public string $materia,
         public string $link,
-        public string $img
+        public string $img,
+        public string $id
     ){}
 
     /**

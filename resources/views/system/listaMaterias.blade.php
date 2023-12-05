@@ -52,10 +52,10 @@
       <div>
   
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          @foreach ($materias as $materia)
+            <x-card-materia :materia="$materia->name" :link="$materia->link" :id="$materia->id" :img="$materia->id" />
 
-          <x-card-materia :materia="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
-          <x-card-materia :materia="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
-          <x-card-materia :materia="'Auto Defesa'" :link="'auto-defesa'" :img="'https://i.chzbgr.com/full/6635785216/h6DD408B7/a-man-and-his-waifu'" />
+          @endforeach
 
         </div>
       </div>

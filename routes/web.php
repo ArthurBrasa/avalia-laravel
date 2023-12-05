@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DepartamentoController;
 
 use App\Http\Controllers\ProfessoresController;
-use App\Http\Controllers\DiciplinasController;
+use App\Http\Controllers\ListaMateriaController;
 use App\Http\Controllers\InfosController;
 use App\Http\Controllers\InfoMateriasController;
 
@@ -40,7 +40,7 @@ Route::post('/professores',  [ProfessoresController::class, 'search'] )->name('s
 Route::get('/professores/{id}', [InfosController::class, 'index'])->name('infoProfessores');
 
 # Matérias
-Route::get('/diciplinas',[DiciplinasController::class, 'index'])->name('diciplinas');
+Route::get('/diciplinas',[ListaMateriaController::class, 'index'])->name('diciplinas');
 Route::get('/diciplinas/{nome}', [InfoMateriasController::class, 'index'])->name('infoMaterias');
 
 

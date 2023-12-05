@@ -6,43 +6,32 @@
 @section('content')
       
     <div class="container">
-        <h1>{{$nome}}</h1>
         
     <div>
         <!--  -->
         <div class="d-flex flex-column flex-md-row gap-5">
-          <div class="card shadow-sm p-3 mb-5 bg-body rounded">
+          {{-- <div class="card shadow-sm p-3 mb-5 bg-body rounded">
             <img class="card-img p-3" width="300px" src='{{asset("imgs/svg/materia/$img.svg")}}' alt="">
             <p class="card-body">{{$nome}}</p>
-          </div>
+          </div> --}}
+
+          <x-card-materia-info :name="$materia->name" :img="$materia->id" />
   
           <div class="card p-5 shadow-sm p-3 mb-5 bg-body rounded">
             <div class="row row-cols-3 mb-5">
               <div class="col p-2">
-                <span class="bg-black bg-opacity-25 py-1 px-2">Departamento:</span>
-                <span class="d-block">lorem</span>
+                <span class="bg-black bg-opacity-25 py-1 px-2">Duração:</span>
+                <span class="d-block">{{$materia->duracao}}h</span>
               </div>
               <div class="col p-2">
-                <span class="bg-black bg-opacity-25 py-1 px-2">Idade:</span>
-                <span class="d-block">lorem</span>
-              </div>
-              <div class="col p-2">
-                <span class="bg-black bg-opacity-25 py-1 px-2">Matéria:</span>
-                <span class="d-block">lorem</span>
-              </div>
-              <div class="col p-2">
-                <span class="bg-black bg-opacity-25 py-1 px-2">Universidade:</span>
-                <span class="d-block">lorem</span>
-              </div>
-              <div class="col p-2">
-                <span class="bg-black bg-opacity-25 py-1 px-2">Departamento:</span>
-                <span class="d-block">lorem</span>
+                <span class="bg-black bg-opacity-25 py-1 px-2">Sigla:</span>
+                <span class="d-block">{{$materia->sigla}}</span>
               </div>
             </div>
             
             <div>
-              <span class="bg-black bg-opacity-25">Observações:</span>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis atque nam beatae quos hic ut rerum, eum incidunt esse quia dignissimos mollitia temporibus est ex, enim neque perspiciatis commodi. Nostrum!</p>
+              <span class="bg-black bg-opacity-25">Descrição:</span>
+              <p>{{$materia->descricao}}</p>
             </div>
          
           </div>
@@ -50,7 +39,7 @@
   
         </div>
       
-        <div class="d-flex justify-content-center">
+        {{-- <div class="d-flex justify-content-center">
           <svg width="250px" height="130" viewBox="0 0 562 130" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g filter="url(#filter0_d_866_842)">
             <rect width="553" height="118" rx="59" fill="#FBB0A0"/>
@@ -69,13 +58,13 @@
             </filter>
             </defs>
             </svg>
-        </div>
+        </div> --}}
           
   
       </div>
   
   
-      <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-around">
+      {{-- <div class="d-flex flex-column flex-md-row align-items-center justify-content-md-around">
         <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 250px;">
           <img class="card-img-top p-2" src="{{asset('imgs/svg/img-materia.svg')}}" alt="">
           <p class="card-body">BNHA001 - Prática de Defesa</p>
@@ -84,7 +73,7 @@
           <img class="card-img-top p-2" src="{{asset('imgs/svg/materia-2.svg')}}" alt="">
           <p class="card-body">BNHA002 - Educação Fisíca</p>
         </div>
-      </div>
+      </div> --}}
   
     </div>
 
