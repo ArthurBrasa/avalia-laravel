@@ -9,32 +9,32 @@
 @endphp
 @section('content')
     <div class="container">
-        <h1>{{$professor->nome}}</h1>
+        {{-- <h1 class="">{{$professor->nome}}</h1> --}}
         
     <div>
         <!--  -->
-        <div class="d-flex flex-column flex-md-row gap-5">
+        <div class="d-flex flex-column flex-md-row gap-5 justify-content-center">
           <div class="card shadow-sm p-3 mb-5 bg-body rounded">
             {{-- <img class="card-img p-3" width="300px" src='{{ asset("imgs/svg/Proffs/$professor->img.svg", true)}}' alt=""> --}}
-            <img class="card-img p-3" width="300px" src='{{ asset("imgs/svg/Proffs/$professor->img.svg")}}' alt="">
+            <img class="card-img p-3" width="300px" height="270px" src='{{ asset("imgs/svg/Proffs/$professor->img.svg")}}' alt="">
             <p class="card-body">{{$professor->nome}}</p>
           </div>
   
           <div class="card p-5 shadow-sm p-3 mb-5 bg-body rounded">
-            <div class="row row-cols-3 mb-5">
-              <div class="col p-2 w-auto">
+            <div class="row row-cols-2">
+              <div class="col p-2">
                 <span class="bg-black bg-opacity-25 py-1 px-2">Departamento:</span>
                 <span class="d-block">{{$professor->departamento}}</span>
               </div>
-              <div class="col p-2 w-auto">
+              <div class="col p-2">
                 <span class="bg-black bg-opacity-25 py-1 px-2">Idade:</span>
                 <span class="d-block">{{$professor->idade}}</span>
               </div>
-              <div class="col p-2 w-auto">
+              <div class="col p-2">
                 <span class="bg-black bg-opacity-25 py-1 px-2">Matéria:</span>
                 <span class="d-block">{{$professor->materia}}</span>
               </div>
-              <div class="col p-2 w-auto">
+              <div class="col p-2">
                 <span class="bg-black bg-opacity-25 py-1 px-2">Universidade:</span>
                 <span class="d-block">{{$professor->universidade}}</span>
               </div>
