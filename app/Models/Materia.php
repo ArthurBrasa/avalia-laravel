@@ -16,5 +16,7 @@ class Materia extends Model
         'descricao',
         'duracao',
         'img_link',
+        'usuario_id',
+        'created_at'
     ];
 }

@@ -10,6 +10,11 @@
         {{ session('success') }}
     </div>
 @endif
+@if(session('error'))
+    <div class="alert alert-success">
+        {{ session('error') }}
+    </div>
+@endif
     <div class="container">
         @if($errors->any())
             <div class="alert alert-danger">
@@ -59,5 +64,41 @@
             <button type="submit" class="btn btn-primary my-3">Adicionar</button>
         </form>
     </div>
+
+    <section class="container">
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#id</th>
+                <th scope="col">name</th>
+                <th scope="col">sigla</th>
+                <th scope="col">created_at</th>
+                <th scope="col">link</th>
+              </tr>
+            </thead>
+                @foreach ($materias as $item)
+                    <tr>
+                        <th scope="row">{{$item->id}}</th>
+                        <td>{{$item->name}}</td>
+                        <td>{{$item->sigla}}</td>
+                        <td>{{$item->created_at}}</td>
+                        <td class="d-flex gap-4">
+                            <a class="btn btn-success" href={{route('infoMaterias', ['nome' => $item->id])}}>infos</a>
+                            <form action="{{route('deleteMaterias', ['id' => $item->id])}}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <!-- Restante do formulário aqui -->
+                                <button class="btn btn-danger" name="id" type="submit">Excluir</button>
+                            </form>
+                        </td>
+                    </tr>
+                @endforeach
+                <tbody>
+              
+
+
+            </tbody>
+          </table>
+    </section>
 
 @endsection

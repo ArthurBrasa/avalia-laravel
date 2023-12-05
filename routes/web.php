@@ -47,6 +47,7 @@ Route::post('/diciplinas',[ListaMateriaController::class, 'search'])->name('sear
 Route::middleware(['auth'])->group(function () {
     Route::get('/diciplinas/new',[MateriaController::class, 'index'])->name('formDiciplinas');
     Route::post('/diciplinas/new',[MateriaController::class, 'store'])->name('storeDiciplinas');
+    Route::delete('/diciplinas/{id}',[MateriaController::class, 'delete'])->name('deleteMaterias');
 });
 
 Route::get('/diciplinas/{nome}', [InfoMateriasController::class, 'index'])->name('infoMaterias');

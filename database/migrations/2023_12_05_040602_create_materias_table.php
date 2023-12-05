@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('sigla');
             $table->text('descricao');
             $table->text('img_link');
+            $table->foreignId('usuario_id')->constrained('users');
             $table->timestamps();
         });
     }
