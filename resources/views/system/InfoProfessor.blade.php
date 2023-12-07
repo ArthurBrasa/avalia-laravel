@@ -14,14 +14,14 @@
     <div>
         <!--  -->
         <div class="d-flex flex-column flex-md-row gap-5 justify-content-center">
-          <div class="card shadow-sm p-3 mb-5 bg-body rounded">
+          {{-- <div class="card shadow-sm p-3 mb-5 bg-body rounded"> --}}
             {{-- <img class="card-img p-3" width="300px" src='{{ asset("imgs/svg/Proffs/$professor->img.svg", true)}}' alt=""> --}}
             <div class="card shadow-sm p-3 mb-5 bg-body rounded" style="min-width: 400px">
                 <img  class="card-img p-3" width="300px" src='{{asset($professor->img)}}' alt="">
             </div>
             
             <p class="card-body">{{$professor->nome}}</p>
-          </div>
+          {{-- </div> --}}
   
           <div class="card p-5 shadow-sm p-3 mb-5 bg-body rounded">
             <div class="row row-cols-2">
