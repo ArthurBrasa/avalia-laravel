@@ -20,7 +20,7 @@ class ListaProfessoresController extends Controller
         $pesquisa = $request->pesquisa;
         // dd($pesquisa);
         // Use o operador LIKE para pesquisar pelo nome do professor
-        $data = Professor::where('name', 'LIKE', "%$pesquisa%")->get();
+        $data = Professor::where('nome', 'LIKE', "%$pesquisa%")->get();
         // dd($materias);
         return view('system.listaProfessores', ['professores' => $data]);
     }
