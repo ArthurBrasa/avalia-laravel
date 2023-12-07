@@ -21,7 +21,9 @@ return new class extends Migration
             $table->string('materia');
             $table->string('universidade');
             $table->text('observacoes');
+            $table->text('img');
             $table->timestamps();
+            $table->foreignId('usuario_id')->constrained('users');
         });
     }
 

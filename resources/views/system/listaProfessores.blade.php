@@ -10,7 +10,7 @@
     {{-- Pesquisa --}}
     <div class="d-flex justify-content-center my-5">
 
-      <form method="POST" action="{{ secure_url(route('searchProfessor'))}}" class="row">
+      <form method="POST" action="{{ route('searchProfessor')}}" class="row">
         @csrf
         <div class="col-8">
           <input class=" form-control" name="pesquisa" type="search" placeholder="Nome do Professor"
@@ -62,7 +62,7 @@
 
           @foreach ($professores as $prof)
               {{-- <p>{{$prof->nome}}</p> --}}
-              <x-professor-card :nome="$prof->nome" :link="$prof->link" :img="$prof->link" :id="$prof->id"/>
+              <x-professor-card :nome="$prof->nome" :img="$prof->img" :id="$prof->id"/>
 
                 {{-- <div class="col">
                   <div class="card shadow-sm">

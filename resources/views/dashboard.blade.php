@@ -19,7 +19,7 @@
                       <div class="col col-md-4 d-flex justify-content-center">
                         <!-- foto -->
                         <div class="card p-3">
-                          <img style="max-width: 300px;" class="center" src="imgs/svg/Proffs/bulma-brief.svg" alt="">
+                          <img style="max-width: 300px;" class="center" src="imgs/svg/Proffs/7.svg" alt="">
                         </div>
                 
                         <!-- infos -->

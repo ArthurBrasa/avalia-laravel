@@ -6,6 +6,8 @@ use App\Http\Controllers\DepartamentoController;
 
 use App\Http\Controllers\ProfessoresController;
 use App\Http\Controllers\ListaMateriaController;
+use App\Http\Controllers\ListaProfessoresController;
+use App\Http\Controllers\InfoProfessorController;
 use App\Http\Controllers\MateriaController;
 use App\Http\Controllers\InfosController;
 use App\Http\Controllers\InfoMateriasController;
@@ -36,9 +38,16 @@ Route::middleware([
 });
 
 # Professores
-Route::get('/professores',  [ProfessoresController::class, 'index'] )->name('professores');
-Route::post('/professores',  [ProfessoresController::class, 'search'] )->name('searchProfessor')->middleware('auth');
-Route::get('/professores/{id}', [InfosController::class, 'index'])->name('infoProfessores');
+Route::get('/professores',  [ListaProfessoresController::class, 'index'] )->name('professores');
+Route::post('/professores',  [ListaProfessoresController::class, 'search'] )->name('searchProfessor');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/professores/news',  [ProfessoresController::class, 'index'] )->name('formProfessor')->middleware('auth');
+    Route::post('/professores/news',  [ProfessoresController::class, 'store'] )->name('storeProfessor')->middleware('auth');
+    Route::delete('/professores/{id}',  [ProfessoresController::class, 'delete'] )->name('deleteProfessor')->middleware('auth');
+    Route::get('/professores/t/{id}',  [ProfessoresController::class, 'get'] )->name('updateProfessor')->middleware('auth');
+    Route::put('/professores/{id}',  [ProfessoresController::class, 'put'] )->name('updateAdicionar')->middleware('auth');
+});
+
 
 # Matérias
 Route::get('/diciplinas',[ListaMateriaController::class, 'index'])->name('diciplinas');
@@ -51,6 +60,7 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/diciplinas/{nome}', [InfoMateriasController::class, 'index'])->name('infoMaterias');
+Route::get('/professores/{id}',  [InfoProfessorController::class, 'index'] )->name('infoProfessores');
 
 
 

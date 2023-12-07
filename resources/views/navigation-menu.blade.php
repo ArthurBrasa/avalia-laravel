@@ -27,6 +27,9 @@
                     <x-nav-link href="{{ route('formDiciplinas') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Nova Matéria') }}
                     </x-nav-link>
+                    <x-nav-link href="{{ route('formProfessor') }}" :active="request()->routeIs('dashboard')">
+                        {{ __('Novo Professor') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -165,6 +168,9 @@
             </x-responsive-nav-link>
             <x-responsive-nav-link href="{{ route('formDiciplinas') }}" :active="request()->routeIs('dashboard')">
                 {{ __('Nova Matéria') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link href="{{ route('formProfessor') }}" :active="request()->routeIs('dashboard')">
+                {{ __('Novo Professor') }}
             </x-responsive-nav-link>
         </div>
 

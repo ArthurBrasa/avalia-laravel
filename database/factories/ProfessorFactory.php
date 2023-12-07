@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class ProfessorFactory extends Factory
 {
     /**
-     * Define the model's default state.
+     * Define the model's default state.    
      *
      * @return array<string, mixed>
      */
@@ -25,6 +25,8 @@ class ProfessorFactory extends Factory
             'materia' => $this->faker->word,
             'universidade' => $this->faker->company,
             'observacoes' => $this->faker->paragraph,
+            
+            
         ];
     }
 }

@@ -18,6 +18,8 @@ class Professor extends Model
         'materia',
         'universidade',
         'observacoes',
+        'usuario_id',
+        'img'
     ];
 
     public static function getProfessorByName($nome)

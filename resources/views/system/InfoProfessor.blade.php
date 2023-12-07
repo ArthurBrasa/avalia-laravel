@@ -16,7 +16,10 @@
         <div class="d-flex flex-column flex-md-row gap-5 justify-content-center">
           <div class="card shadow-sm p-3 mb-5 bg-body rounded">
             {{-- <img class="card-img p-3" width="300px" src='{{ asset("imgs/svg/Proffs/$professor->img.svg", true)}}' alt=""> --}}
-            <img class="card-img p-3" width="300px" height="270px" src='{{ asset("imgs/svg/Proffs/$professor->img.svg")}}' alt="">
+            <div class="card-img p-3 overflow-hidden" style="max-height: 400px; max-width: 400px">
+              <img class="" width="280px"  height="370px" src='{{ asset("$professor->img")}}' alt="">
+            </div>
+            
             <p class="card-body">{{$professor->nome}}</p>
           </div>
   
@@ -37,6 +40,10 @@
               <div class="col p-2">
                 <span class="bg-black bg-opacity-25 py-1 px-2">Universidade:</span>
                 <span class="d-block">{{$professor->universidade}}</span>
+              </div>
+              <div class="col p-2">
+                <span class="bg-black bg-opacity-25 py-1 px-2">Email:</span>
+                <span class="d-block">{{$professor->email}}</span>
               </div>
             </div>
             
