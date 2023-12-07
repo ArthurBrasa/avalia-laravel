@@ -17,7 +17,7 @@
           <div class="card shadow-sm p-3 mb-5 bg-body rounded">
             {{-- <img class="card-img p-3" width="300px" src='{{ asset("imgs/svg/Proffs/$professor->img.svg", true)}}' alt=""> --}}
             <div class="card-img p-3 overflow-hidden" style="max-height: 400px; max-width: 400px; min-width: 400px">
-              <img class="" width="280px"  height="370px" src='{{ asset("$professor->img")}}' alt="">
+              <img class=""  height="370px" src='{{ asset("$professor->img")}}' alt="">
             </div>
             
             <p class="card-body">{{$professor->nome}}</p>
