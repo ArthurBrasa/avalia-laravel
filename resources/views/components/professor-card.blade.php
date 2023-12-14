@@ -5,11 +5,11 @@
       <div class="card-body">
           <p class="card-text">{{ $nome ?? "Unkown" }}</p>
           <div class="d-flex justify-content-between align-items-center">
-              <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">
-                    <a href="{{ route('infoProfessores', ['id' => $id]) }}">infos</a>
+              <div class="w-100">
+                  <button type="button" class="btn btn-sm btn-outline-secondary w-100">
+                    <a href="{{ route('infoProfessores', ['id' => $id]) }}" class="nav-link">infos</a>
                   </button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button>
+                  {{-- <button type="button" class="btn btn-sm btn-outline-secondary">E-mails</button> --}}
               </div>
               <small class="text-body-secondary">
                   <img width="50px" src="imgs/svg/Icons/nota.svg" alt="">
