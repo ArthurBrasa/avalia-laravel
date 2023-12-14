@@ -35,7 +35,7 @@
     
 
   <!--  -->
-  <div class="container  justify-content-center d-flex">
+  {{-- <div class="container  justify-content-center d-flex">
     <div class="card mb-3" style="max-width: 740px;">
       <div class="row g-0">
         <div class="col-md-4 p-4">
@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> --}}
 
   <!--  -->
   <div class="container-md">

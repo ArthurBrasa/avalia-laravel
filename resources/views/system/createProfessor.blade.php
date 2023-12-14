@@ -35,7 +35,7 @@
             <div class="row form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Nome</label>
-                    <input type="text" name="name" class="form-control" value="{{$update->nome}}" id="inputEmail4" placeholder="Nome da Matéria" >
+                    <input type="text" name="name" class="form-control" value="{{$update->nome}}" id="inputEmail4" placeholder="Nome Professor" >
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">email</label>
@@ -53,10 +53,10 @@
                     <label for="inputPassword4">departamento</label>
                     <input type="text" name="departamento" value="{{$update->departamento}}"  class="form-control" id="inputPassword4" placeholder="CIC" >
                 </div>
-                <div class="form-group col-md-3">
+                {{-- <div class="form-group col-md-3">
                     <label for="inputPassword4">Sigla</label>
                     <input type="text" name="sigla" value="{{$update->sigla}}"  class="form-control" id="inputPassword4" placeholder="sigla" >
-                </div>
+                </div> --}}
             </div>
             <div class="form-group">
                 <label for="inputAddress">img</label>
@@ -81,7 +81,7 @@
             <div class="row form-row">
                 <div class="form-group col-md-6">
                     <label for="inputEmail4">Nome</label>
-                    <input type="text" name="name" class="form-control" id="inputEmail4" placeholder="Nome da Matéria" required>
+                    <input type="text" name="name" class="form-control" id="inputEmail4" placeholder="Nome do Professor" required>
                 </div>
                 <div class="form-group col-md-6">
                     <label for="inputPassword4">E-mail</label>
@@ -99,10 +99,10 @@
                     <label for="inputPassword4">Departamento</label>
                     <input type="text" name="departamento"  class="form-control" id="inputPassword4" placeholder="CIC" required>
                 </div>
-                <div class="form-group col-md-3">
+                {{-- <div class="form-group col-md-3">
                     <label for="inputPassword4">Sigla</label>
                     <input type="text" name="sigla"  class="form-control" id="inputPassword4" placeholder="sigla" required>
-                </div>
+                </div> --}}
             </div>
             <div class="form-group">
                 <label for="inputAddress">Imagem link</label>
